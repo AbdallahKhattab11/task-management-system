@@ -1,16 +1,30 @@
 @import "tailwindcss";
 
 @theme {
+  --color-blue: #3754db;
+  --color-yellow: #fbbe37;
 
-  --color-blue: #3754DB;
-  --color-yellow: #FBBE37;
+  --color-dark: #16171d;
+  --color-wine: #b80020;
 
-  --color-dark: #16171D;
-  --color-wine: #B80020;
-
-  --color-error: #FB151A;
-  --color-warning: #EBA300;
-  --color-info: #6684FF;
-  --color-success: #00C271;
+  --color-error: #fb151a;
+  --color-warning: #eba300;
+  --color-info: #6684ff;
+  --color-success: #00c271;
 }
 
+html {
+  font-family: "Gelion", sans-serif;
+}
+
+.primaryButton {
+  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-sm md:text-base text-white font-medium tracking-wide rounded-xl bg-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
+}
+
+.secondaryButton {
+  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-sm md:text-base text-blue font-medium tracking-wide rounded-xl bg-white border border-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
+}
+
+.tetiaryButton {
+  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-sm md:text-base text-blue font-medium tracking-wide rounded-xl bg-white cursor-pointer;
+}
