@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+
+  --breakpoint-xs:500px;
+
   --color-blue: #3754db;
   --color-yellow: #fbbe37;
 
@@ -11,6 +14,8 @@
   --color-warning: #eba300;
   --color-info: #6684ff;
   --color-success: #00c271;
+
+  --color-dolghin: #62667e;
 }
 
 html {
@@ -18,13 +23,50 @@ html {
 }
 
 .primaryButton {
-  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-sm md:text-base text-white font-medium tracking-wide rounded-xl bg-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
+  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-base lg:text-[18px] text-white font-medium tracking-wide rounded-xl bg-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
 }
 
 .secondaryButton {
-  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-sm md:text-base text-blue font-medium tracking-wide rounded-xl bg-white border border-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
+  @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-base lg:text-[18px] text-blue font-medium tracking-wide rounded-xl bg-white border border-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
 }
 
 .tetiaryButton {
   @apply h-[40px] md:h-[48px] lg:h-[56px] w-[188px] md:w-[190px] lg:w-[193px] text-sm md:text-base text-blue font-medium tracking-wide rounded-xl bg-white cursor-pointer;
+}
+
+.container {
+  @apply mx-auto w-full h-full transition-all duration-300;
+}
+
+.wrapper {
+  @apply w-full h-full;
+}
+
+.elementCenter {
+  @apply flex justify-center items-center;
+}
+
+.apple {
+  @apply bg-yellow text-blue text-[16px] font-medium xs:max-w-[188px] w-full h-[48px] px-3 xl:px-5 text-nowrap rounded-xl cursor-pointer;
+}
+
+.android {
+  @apply bg-white text-blue text-[16px] font-medium xs:max-w-[188px] w-full h-[48px] px-3 xl:px-5 text-nowrap rounded-xl cursor-pointer;
+}
+
+.inputField {
+  @apply max-w-[350px] w-full h-[40px] lg:h-[48px] px-4 text-[18px] font-medium tracking-wide rounded-lg lg:rounded-xl border-none outline focus:outline-2 outline-blue;
+}
+
+.customCreateAccount {
+  @apply h-[48px] lg:max-w-[350px] w-full text-base lg:text-[18px] text-white font-medium tracking-wide rounded-xl bg-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
+}
+
+.CustomLogin {
+  @apply h-[40px] md:h-[48px] lg:h-[56px] lg:max-w-[350px] w-full text-base lg:text-[18px] text-blue font-medium tracking-wide rounded-xl bg-white border border-blue cursor-pointer hover:scale-102 transition-all duration-200 disabled:opacity-50;
+}
+
+
+.inputField-mobile {
+  @apply  w-full h-[40px] lg:h-[48px] px-4 text-[18px] font-medium tracking-wide rounded-lg lg:rounded-xl border-none outline focus:outline-2 outline-blue;
 }
